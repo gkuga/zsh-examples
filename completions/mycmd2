@@ -1,0 +1,9 @@
+_mycmd_completions2() {
+  _arguments \
+    '-h[display help]' \
+    '-v[enable verbose mode]' \
+    '-o[specify output file]:output file:_files' \
+    '*:filename:_files'
+}
+
+compdef _mycmd_completions2 mycmd2
